@@ -5,12 +5,17 @@ import Routes from "./routes";
 import { theme } from "./theme";
 import { Container } from '@material-ui/core';
 import { GlobalStyles } from "./global";
+
+
+
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <GlobalStyles />
-      <Container maxWidth="sm">
+
+      <Container maxWidth="sm" disableGutters>
+
         <Routes />
       </Container>
 
