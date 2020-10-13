@@ -1,6 +1,6 @@
 {
-  "theme_color": "#ef80a0",
-  "background_color": "#d3cdc8",
+  "theme_color": "#000",
+  "background_color": "#fff",
   "display": "standalone",
   "scope": "/tindog/",
   "start_url": "/tindog/",
