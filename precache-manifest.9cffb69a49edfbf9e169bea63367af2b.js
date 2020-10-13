@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cf71cb729ac1a29f09644c7828ed45dc",
+    "revision": "ad1786740c8f902a66ca806975435ac9",
     "url": "/tindog/index.html"
   },
   {
-    "revision": "d97b0ee8f3f34a91bdb9",
+    "revision": "30b537278b1d550b9dab",
     "url": "/tindog/static/css/2.cf0abbce.chunk.css"
   },
   {
-    "revision": "d97b0ee8f3f34a91bdb9",
-    "url": "/tindog/static/js/2.621cea55.chunk.js"
+    "revision": "30b537278b1d550b9dab",
+    "url": "/tindog/static/js/2.1c9a391d.chunk.js"
   },
   {
     "revision": "6450de710530429eeb05b237eb7bddb2",
-    "url": "/tindog/static/js/2.621cea55.chunk.js.LICENSE.txt"
+    "url": "/tindog/static/js/2.1c9a391d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a3faf37db03a7079ca7d",
-    "url": "/tindog/static/js/main.301bace2.chunk.js"
+    "revision": "f786b5f83913b859c45f",
+    "url": "/tindog/static/js/main.af79705b.chunk.js"
   },
   {
     "revision": "e193b36ce5953daa425b",
     "url": "/tindog/static/js/runtime-main.ebe21e6b.js"
+  },
+  {
+    "revision": "b5d19a0c9fab8b371aba4f6ff17fbf51",
+    "url": "/tindog/static/media/casinha.b5d19a0c.svg"
   },
   {
     "revision": "5cb7edfceb233100075dc9a1e12e8da3",
@@ -118,5 +122,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ebf6d1640ccddb99fb49f73c052c55a8",
     "url": "/tindog/static/media/roboto-latin-900italic.ebf6d164.woff2"
+  },
+  {
+    "revision": "2c1d2120066f7d8cf311ecdedccd199a",
+    "url": "/tindog/static/media/tindog1.2c1d2120.svg"
   }
 ]);
