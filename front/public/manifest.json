@@ -4,6 +4,7 @@
   "display": "standalone",
   "scope": "/tindog/",
   "start_url": "/tindog/",
+  "name": "TinDog",
   "app_name": "TinDog",
   "short_name": "TinDog",
   "description": "App para ado\u00e7\u00f5es de Pets",
