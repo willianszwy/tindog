@@ -18,7 +18,8 @@ import FaceBookButton from "../components/Button";
 
 const useStyles = makeStyles(theme => ({
     card: {
-        marginTop: "10px"
+        margin: "10px 10px 0 10px",
+        minHeight: "400px"
     },
     img: {
         display: "block",

@@ -7,11 +7,14 @@ const FacebookTokenStrategy = require('passport-facebook-token');
 const jwt = require("jsonwebtoken");
 
 const router = require("./router");
+const User = require("./models/user");
 
 const app = express();
 
 const mongoose = require('mongoose');
 const mongoDB = process.env.MONGODB_URL;
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
 mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).then(() => {
     console.log("success connect db");
 });
@@ -25,22 +28,34 @@ passport.use(new FacebookTokenStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
     clientSecret: process.env.FACEBOOK_APP_SECRET,
     fbGraphVersion: 'v3.0'
-}, function (accessToken, refreshToken, profile, done) {
-    //todo salvar usuario
+}, async (accessToken, refreshToken, profile, done) => {
 
-    const user = profile._json;
+    try {
 
-    const token = jwt.sign({ user }, process.env.PRIVATE_KEY, {
-        expiresIn: "24h"
-    });
+        let user = await User.findOne({ 'facebook_id': profile.id });
 
-    user.picture = profile.photos[0].value;
+        if (!user) {
+            const { id: facebook_id, name: nome, email } = profile._json;
+            const avatar = profile.photos[0].value;
+            user = await User.create({
+                email, facebook_id, nome, avatar
+            });
 
-    return done(null, { profile: user, access_token: token });
-}
-));
+            await user.save();
+        }
+
+        const token = jwt.sign({ user }, process.env.PRIVATE_KEY, {
+            expiresIn: "24h"
+        });
+
+        return done(null, { profile: user, access_token: token, facebook_token: accessToken });
 
 
+    } catch (error) {
+        console.log(error);
+        done(error, false, error.message)
+    }
+}));
 
 app.use(passport.initialize());
 app.use(cors(corsOptions));
@@ -58,7 +73,7 @@ app.post('/auth/facebook/token',
         }
     }
 );
-
+app.use(express.static('public'));
 app.use("/api", router);
 
 

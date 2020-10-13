@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
-import { Avatar, Button, Typography } from '@material-ui/core';
+import { Avatar, Typography } from '@material-ui/core';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
@@ -16,7 +16,7 @@ import IconButton from '@material-ui/core/IconButton';
 import HomeIcon from '@material-ui/icons/Home';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
-import { getUser } from "../../services/auth";
+import { getUser, getAvatar } from "../../services/auth";
 
 import { Link, withRouter } from "react-router-dom";
 
@@ -68,12 +68,12 @@ const Menu = () => {
                     <div className={classes.head}>
                         <Avatar
                             alt="usuario"
-                            src={user.picture}
+                            src={getAvatar(user.avatar)}
                             className={classes.avatar}
                             style={{ alignSelf: "center" }}
                         />
                         <Typography variant="subtitle1" align='center' gutterBottom>
-                            {user.name}
+                            {user.nome}
                         </Typography>
                         <Typography variant="subtitle2" align='center' gutterBottom>
                             {user.email}
@@ -94,7 +94,7 @@ const Menu = () => {
                             to="/match"
                             button>
                             <ListItemIcon>{<FavoriteIcon />}</ListItemIcon>
-                            <ListItemText primary="Match" />
+                            <ListItemText primary="Favoritos" />
                         </ListItem>
                         <ListItem
                             component={Link}

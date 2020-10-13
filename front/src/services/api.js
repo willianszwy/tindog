@@ -2,8 +2,8 @@ import axios from "axios";
 import { getToken, logout } from "./auth";
 
 const api = axios.create({
-    baseURL: "http://localhost:8080"
-    // baseURL: process.env.REACT_APP_BACK_SERVER
+    // baseURL: "http://localhost:8080"
+    baseURL: process.env.REACT_APP_BACK_SERVER
 });
 
 api.interceptors.request.use(async config => {

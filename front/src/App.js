@@ -6,19 +6,21 @@ import { theme } from "./theme";
 import { Container } from '@material-ui/core';
 import { GlobalStyles } from "./global";
 
+import { AppContextProvider } from './context/state';
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <GlobalStyles />
+      <AppContextProvider>
+        <CssBaseline />
+        <GlobalStyles />
 
-      <Container maxWidth="sm" disableGutters>
+        <Container maxWidth="sm" disableGutters>
 
-        <Routes />
-      </Container>
-
+          <Routes />
+        </Container>
+      </AppContextProvider>
     </ThemeProvider>
   );
 }

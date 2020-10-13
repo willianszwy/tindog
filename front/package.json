@@ -5,15 +5,25 @@
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.56",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
+    "classnames": "^2.2.6",
+    "cropperjs": "^1.5.9",
     "react": "^16.13.1",
+    "react-cropper": "^2.1.4",
+    "react-deck-swiper": "^1.0.9",
     "react-dom": "^16.13.1",
     "react-facebook-login": "^4.1.1",
+    "react-hook-form": "^6.8.6",
+    "react-image-crop": "^8.6.5",
+    "react-images-uploading": "^3.1.2",
+    "react-material-ui-carousel": "^2.0.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.1",
+    "react-scripts": "^3.4.3",
+    "react-swipeable": "^5.5.1",
     "styled-components": "^5.1.1",
     "typeface-roboto": "0.0.75"
   },
@@ -21,7 +31,9 @@
     "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
