@@ -12,7 +12,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 
 import FaceBookButton from "../components/Button";
 
-
+import Logo from "../tindog1.svg";
 
 
 
@@ -24,7 +24,7 @@ const useStyles = makeStyles(theme => ({
     img: {
         display: "block",
         width: "50%",
-        margin: "20px auto"
+        margin: "5px auto"
     },
     button: {
         marginBottom: "8px"
@@ -56,7 +56,9 @@ const Login = props => {
     return (
         <div>
             <Card className={classes.card}>
+
                 <CardContent>
+                    <img src={Logo} className={classes.img} alt="logo" />
                     <FacebookLogin
                         appId="2345232325785017"
                         autoLoad={false}

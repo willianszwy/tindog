@@ -17,11 +17,17 @@ import IconButton from "@material-ui/core/IconButton";
 import Divider from "@material-ui/core/Divider";
 import Avatar from "@material-ui/core/Avatar";
 import NavigateNextIcon from "@material-ui/icons/NavigateNext";
+import Casinha from '../casinha.svg';
 
 const useStyles = makeStyles(theme => ({
     card: {
         margin: "-80px 10px 0 10px",
         minHeight: "400px"
+    },
+    img: {
+        display: "block",
+        width: "50%",
+        margin: "5px auto"
     },
     fab: {
         position: "fixed",
@@ -97,8 +103,10 @@ const Pets = () => {
                     {pets.length > 0 ? (<List className={classes.root}>{pets}</List>)
                         :
                         (
-                            <div><Typography variant="h5" align="center">
-                                Você ainda não adicionou nenhum Pet para adoção
+                            <div>
+                                <img src={Casinha} className={classes.img} alt="logo" />
+                                <Typography variant="h5" align="center">
+                                    Você ainda não adicionou nenhum Pet para adoção
                         </Typography>
                                 <Typography variant="body1" align="center">
                                     Clique no botão abaixo para adicionar

@@ -11,11 +11,17 @@ import CardDeck from '../components/CardDeck';
 import CardButtons from '../components/CardButtons';
 
 import { Swipeable, direction } from 'react-deck-swiper';
+import Casinha from '../casinha.svg';
 
 const useStyles = makeStyles(theme => ({
     card: {
         margin: "10px 10px 0 10px",
         minHeight: "400px"
+    },
+    img: {
+        display: "block",
+        width: "50%",
+        margin: "5px auto"
     },
     media: {
         height: 300,
@@ -109,9 +115,11 @@ const Home = () => {
                         : (
                             <Card className={classes.card} elevation={3} >
                                 <CardContent>
+                                    <img src={Casinha} className={classes.img} alt="logo" />
                                     <Typography variant="h5" align="center">
                                         Não encontramos nenhum resultado de acordo com suas preferências
                                     </Typography>
+
                                 </CardContent>
                             </Card>)}
 

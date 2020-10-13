@@ -20,9 +20,9 @@ mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true }).t
 });
 var db = mongoose.connection;
 
-var corsOptions = {
-    origin: "https://localhost:3000"
-};
+// var corsOptions = {
+//     origin: "https://localhost:3000"
+// };
 
 passport.use(new FacebookTokenStrategy({
     clientID: process.env.FACEBOOK_APP_ID,
@@ -58,7 +58,8 @@ passport.use(new FacebookTokenStrategy({
 }));
 
 app.use(passport.initialize());
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 

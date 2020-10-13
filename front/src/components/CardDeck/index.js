@@ -11,6 +11,11 @@ const useStyles = makeStyles({
     root: {
         margin: "10px 10px 0 10px",
     },
+    img: {
+        display: "block",
+        width: "50%",
+        margin: "5px auto"
+    },
     cardMedia: {
         height: 300,
         objectFit: 'cover',
