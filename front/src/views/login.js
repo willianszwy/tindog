@@ -91,7 +91,7 @@ const Login = props => {
                         </Grid>
                         <Grid item>
                             <Link component={RLink} to="/term">
-                                termo e condições
+                                termos e condições
                         </Link>
                         </Grid>
                     </Grid>
