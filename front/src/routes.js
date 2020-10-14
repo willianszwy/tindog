@@ -19,6 +19,8 @@ import Pet from "./views/pet";
 import Photos from "./views/photos";
 import Contact from "./views/contact";
 import Confirm from "./views/confirm";
+import Privacy from "./views/privacy";
+import Term from "./views/term";
 
 const PrivateRoute = ({ component: Component, ...rest }) => (
     <Route
@@ -50,6 +52,8 @@ const Routes = () => (
             <Route path="/login" exact component={Login} />
             <Route path="/logout" exact component={Logout} />
             <Route path="/confirm" component={Confirm} />
+            <Route path="/privacy" component={Privacy} />
+            <Route path="/term" component={Term} />
 
             <PrivateRoute path="/config" component={Config} />
             <PrivateRoute path="/match" component={Match} />

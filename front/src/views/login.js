@@ -13,6 +13,9 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import FaceBookButton from "../components/Button";
 
 import Logo from "../tindog1.svg";
+import { Link as RLink } from "react-router-dom";
+import { Link, Grid } from "@material-ui/core";
+
 
 
 
@@ -78,6 +81,21 @@ const Login = props => {
 
                         )}
                     />
+                    <br /><br />
+                    <Grid container alignItems="center">
+                        <Grid item xs>
+                            <Link component={RLink} to="/privacy">
+                                política de privacidade
+                        </Link>
+                        </Grid>
+                        <Grid item>
+                            <Link component={RLink} to="/term">
+                                termo e condições
+                        </Link>
+                        </Grid>
+                    </Grid>
+
+
 
 
 
