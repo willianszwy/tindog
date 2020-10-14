@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d9d0750017fc073a04ca73babec16a52",
+    "revision": "a8004f89bfda55a3f4f7d73d80a64a90",
     "url": "/tindog/index.html"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tindog/static/js/2.73e67441.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "90c43d4ec6c7567ae4f3",
-    "url": "/tindog/static/js/main.9c9c684e.chunk.js"
+    "revision": "a1c3fe2b9a743dbd827a",
+    "url": "/tindog/static/js/main.3b1bb616.chunk.js"
   },
   {
     "revision": "e193b36ce5953daa425b",

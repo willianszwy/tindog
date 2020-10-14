@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/tindog/static/js/main.9c9c684e.chunk.js",
-    "main.js.map": "/tindog/static/js/main.9c9c684e.chunk.js.map",
+    "main.js": "/tindog/static/js/main.3b1bb616.chunk.js",
+    "main.js.map": "/tindog/static/js/main.3b1bb616.chunk.js.map",
     "runtime-main.js": "/tindog/static/js/runtime-main.ebe21e6b.js",
     "runtime-main.js.map": "/tindog/static/js/runtime-main.ebe21e6b.js.map",
     "static/css/2.cf0abbce.chunk.css": "/tindog/static/css/2.cf0abbce.chunk.css",
     "static/js/2.73e67441.chunk.js": "/tindog/static/js/2.73e67441.chunk.js",
     "static/js/2.73e67441.chunk.js.map": "/tindog/static/js/2.73e67441.chunk.js.map",
     "index.html": "/tindog/index.html",
-    "precache-manifest.695e1c0f847227968f8ee92a7072aea2.js": "/tindog/precache-manifest.695e1c0f847227968f8ee92a7072aea2.js",
+    "precache-manifest.388c8d7a4635d88a89040b566a28b413.js": "/tindog/precache-manifest.388c8d7a4635d88a89040b566a28b413.js",
     "service-worker.js": "/tindog/service-worker.js",
     "static/css/2.cf0abbce.chunk.css.map": "/tindog/static/css/2.cf0abbce.chunk.css.map",
     "static/js/2.73e67441.chunk.js.LICENSE.txt": "/tindog/static/js/2.73e67441.chunk.js.LICENSE.txt",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.ebe21e6b.js",
     "static/css/2.cf0abbce.chunk.css",
     "static/js/2.73e67441.chunk.js",
-    "static/js/main.9c9c684e.chunk.js"
+    "static/js/main.3b1bb616.chunk.js"
   ]
 }
