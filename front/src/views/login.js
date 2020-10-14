@@ -75,6 +75,7 @@ const Login = props => {
                                 color="primary"
                                 startIcon={<FacebookIcon />}
                                 fullWidth
+                                isMobile={false}
                             >
                                 Login com o Facebook
                             </FaceBookButton>
