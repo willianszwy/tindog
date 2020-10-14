@@ -67,6 +67,7 @@ const Login = props => {
                         autoLoad={false}
                         fields="name,email,picture"
                         callback={responseFacebook}
+                        disableMobileRedirect={true}
                         render={renderProps => (
                             <FaceBookButton
                                 onClick={renderProps.onClick}
@@ -75,7 +76,7 @@ const Login = props => {
                                 color="primary"
                                 startIcon={<FacebookIcon />}
                                 fullWidth
-                                disableMobileRedirect={true}
+
                             >
                                 Login com o Facebook
                             </FaceBookButton>
